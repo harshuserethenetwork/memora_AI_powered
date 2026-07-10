@@ -1,6 +1,15 @@
 node_modules
-dist
 .expo
-ios
+dist
+coverage
 android
+ios
+
+package-lock.json
+
+*.png
+*.jpg
+*.svg
+
+.env*
 *.lock
