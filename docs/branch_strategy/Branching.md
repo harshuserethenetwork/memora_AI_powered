@@ -6,19 +6,19 @@ This document defines the Git branching strategy followed by the project. Every 
 
 # Branch Overview
 
-| Branch | Purpose |
-|---------|---------|
-| `main` | Production-ready code. Always stable and deployable. |
-| `develop` | Integration branch where completed features are merged before release. |
-| `feature/*` | Development of new features. |
-| `bugfix/*` | Fixes for bugs found during development or testing. |
-| `hotfix/*` | Critical fixes for production issues. |
-| `release/*` | Release preparation, testing, and version stabilization. |
-| `chore/*` | Maintenance tasks that don't affect application functionality. |
-| `docs/*` | Documentation updates only. |
-| `refactor/*` | Code restructuring without changing functionality. |
-| `test/*` | Adding or updating automated tests. |
-| `ci/*` | CI/CD pipeline and GitHub Actions related changes. |
+| Branch       | Purpose                                                                |
+| ------------ | ---------------------------------------------------------------------- |
+| `main`       | Production-ready code. Always stable and deployable.                   |
+| `develop`    | Integration branch where completed features are merged before release. |
+| `feature/*`  | Development of new features.                                           |
+| `bugfix/*`   | Fixes for bugs found during development or testing.                    |
+| `hotfix/*`   | Critical fixes for production issues.                                  |
+| `release/*`  | Release preparation, testing, and version stabilization.               |
+| `chore/*`    | Maintenance tasks that don't affect application functionality.         |
+| `docs/*`     | Documentation updates only.                                            |
+| `refactor/*` | Code restructuring without changing functionality.                     |
+| `test/*`     | Adding or updating automated tests.                                    |
+| `ci/*`       | CI/CD pipeline and GitHub Actions related changes.                     |
 
 ---
 
@@ -277,16 +277,16 @@ git checkout -b release/v1.0.0
 # Pull Request Target
 
 | Source Branch | Target Branch |
-|---------------|---------------|
-| feature/* | develop |
-| bugfix/* | develop |
-| chore/* | develop |
-| docs/* | develop |
-| refactor/* | develop |
-| test/* | develop |
-| ci/* | develop |
-| release/* | main |
-| hotfix/* | main |
+| ------------- | ------------- |
+| feature/*     | develop       |
+| bugfix/*      | develop       |
+| chore/*       | develop       |
+| docs/*        | develop       |
+| refactor/*    | develop       |
+| test/*        | develop       |
+| ci/*          | develop       |
+| release/*     | main          |
+| hotfix/*      | main          |
 
 ---
 
